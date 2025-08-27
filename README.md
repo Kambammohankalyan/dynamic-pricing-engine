@@ -13,8 +13,6 @@ _(Note: Link points to the deployed API endpoint. Use a tool like Postman or `cu
 
 ## Project Overview
 
-## Project Overview
-
 This project is an end-to-end data science application that predicts taxi demand in NYC and suggests dynamic pricing to maximize revenue. The core of the project is a machine learning model served via a REST API, containerized with Docker, and deployed on Google Cloud Run. This project demonstrates a complete MLOps workflow, from raw data processing to a live, scalable cloud deployment. While this implementation focuses on the NYC taxi domain, the end-to-end architecture is designed as a reusable blueprint for any dynamic pricing problem, such as for e-commerce, hotel bookings, or airline tickets.
 
 ![API Demo](demo.gif)
