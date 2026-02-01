@@ -18,6 +18,5 @@ COPY ./app .
 # Expose port 8080 to the outside world. Our Flask app runs on this port.
 EXPOSE 8080
 
-# The command to run when the container starts.
 # We use gunicorn, a production-ready web server, instead of Flask's built-in server.
 CMD ["gunicorn", "--bind", "0.0.0.0:8080", "main:app"]
