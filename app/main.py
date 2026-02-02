@@ -7,7 +7,6 @@ import datetime
 app = Flask(__name__)
 
 # --- Load the trained model when the application starts ---
-# The model is loaded only once, making predictions faster.
 try:
     model = joblib.load('demand_predictor_model.joblib')
     print("Model loaded successfully.")
