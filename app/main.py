@@ -55,7 +55,6 @@ def predict():
         day_of_month = dt_object.day
         month = dt_object.month
         
-        # Create a pandas DataFrame that matches the model's expected input format
         input_df = pd.DataFrame([{
             'PULocationID': location_id,
             'hour': hour,
