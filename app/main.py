@@ -15,7 +15,6 @@ except Exception as e:
     model = None
 
 # --- Define the pricing logic ---
-# This function applies a multiplier based on the predicted demand.
 BASE_PRICE = 10.0 # Example base price in USD
 
 def get_price_multiplier(predicted_demand):
