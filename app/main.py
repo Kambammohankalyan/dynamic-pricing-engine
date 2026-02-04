@@ -38,10 +38,8 @@ def predict():
             return jsonify({'error': 'Missing `location_id` in request'}), 400
             
         location_id = data['location_id']
-        # If timestamp is not provided, default to the current time
         timestamp_str = data.get('timestamp', datetime.datetime.now().isoformat())
         
-        # Convert timestamp to a datetime object and create time-based features
         dt_object = datetime.datetime.fromisoformat(timestamp_str)
         hour = dt_object.hour
         day_of_week = dt_object.weekday()
@@ -56,7 +54,6 @@ def predict():
             'month': month
         }])
         
-        # --- Prediction and Pricing ---
         # Use the model to predict demand
         predicted_demand = model.predict(input_df)[0]
         
