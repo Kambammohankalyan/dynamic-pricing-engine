@@ -13,7 +13,7 @@ except Exception as e:
     model = None
 
 
-BASE_PRICE = 10.0 #price in USD
+BASE_PRICE = 10.0 #example price in USD
 
 def get_price_multiplier(predicted_demand):
     """Calculates a price multiplier based on the predicted demand."""
