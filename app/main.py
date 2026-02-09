@@ -18,7 +18,7 @@ BASE_PRICE = 10.0 #example price in USD
 def get_price_multiplier(predicted_demand):
     """Calculates a price multiplier based on the predicted demand."""
     if predicted_demand < 50:
-        return 0.9  # 10% discount for low demand
+        return 0.9  # 10% discount for low demand 
     elif 50 <= predicted_demand < 150:
         return 1.0  # Standard price
     elif 150 <= predicted_demand < 300:
@@ -54,7 +54,7 @@ def predict():
             'month': month
         }])
         
-        # Use the model to predict demand
+        # Use the model to predict demand which is helpful
         predicted_demand = model.predict(input_df)[0]
         
         # Apply the pricing logic
