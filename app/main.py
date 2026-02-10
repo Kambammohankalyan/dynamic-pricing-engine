@@ -16,7 +16,7 @@ except Exception as e:
 BASE_PRICE = 10.0 #example price in USD
 
 def get_price_multiplier(predicted_demand):
-    """Calculates a price multiplier based on the predicted demand."""
+    """Calculates a price multiplier based on the predicted demand. want to make it high dynamic"""
     if predicted_demand < 50:
         return 0.9  # 10% discount for low demand 
     elif 50 <= predicted_demand < 150:
