@@ -7,7 +7,7 @@ WORKDIR /app
 # Copy the file that lists the required Python packages
 COPY requirements.txt .
 
-# Install the Python packages specified in requirements.txt
+# Install the Python packages specified in requirements.txt which are important 
 # --no-cache-dir ensures we don't store the download cache, keeping the image small
 # --trusted-host is a good practice to avoid SSL issues in some networks
 RUN pip install --no-cache-dir --trusted-host pypi.python.org -r requirements.txt
